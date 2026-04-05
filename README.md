@@ -2,8 +2,6 @@
 
 A desktop expense tracking application built with Python. Handles transaction management, budget tracking, financial summaries, and spending visualization.
 
-Built as part of my Python Engineering coursework during my MS in Computer Science at Southern Illinois University, Carbondale.
-
 ## What it does
 
 - Add, delete, and reset expense and income transactions
