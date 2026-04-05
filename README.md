@@ -18,73 +18,55 @@ Built as part of my Python Engineering coursework during my MS in Computer Scien
 The app starts with an empty transaction table and all financial values at zero. The category dropdown includes preset options (Utilities, Groceries, Food, Miscellaneous, Transportation, Income) and also accepts custom categories typed in directly.
 
 <p align="center">
-  <img src="screenshots/01_app_launch.png" width="700" alt="Application on first launch"/>
+  <img src="screenshots/app_launch.png" width="700" alt="Application on first launch"/>
 </p>
 
 <p align="center">
-  <img src="screenshots/02_category_dropdown.png" width="700" alt="Category dropdown menu"/>
+  <img src="screenshots/category_dropdown.png" width="700" alt="Category dropdown menu"/>
 </p>
 
 ### Setting a budget
 Users enter a budget amount and click "Set Budget." The app validates the input and shows a confirmation dialog. Non-numeric input triggers an error message.
 
 <p align="center">
-  <img src="screenshots/03_budget_set.png" width="600" alt="Budget confirmation"/>
-  <br/>
-  <img src="screenshots/04_budget_invalid_input.png" width="600" alt="Invalid budget input error"/>
-</p>
-
-### Input validation
-Every field is validated before a transaction is accepted. The app catches missing fields, invalid date formats, and non-numeric amounts with specific error messages.
-
-<p align="center">
-  <img src="screenshots/05_missing_date.png" width="500" alt="Missing date error"/>
-  <img src="screenshots/06_missing_description.png" width="500" alt="Missing description error"/>
-</p>
-<p align="center">
-  <img src="screenshots/07_missing_category.png" width="500" alt="Missing category error"/>
-  <img src="screenshots/08_missing_amount.png" width="500" alt="Missing amount error"/>
-</p>
-<p align="center">
-  <img src="screenshots/09_invalid_date.png" width="500" alt="Invalid date format error"/>
-  <img src="screenshots/10_invalid_amount.png" width="500" alt="Invalid amount error"/>
+  <img src="screenshots/budget_set.png" width="700" alt="Budget confirmation"/>
 </p>
 
 ### Transaction management
 Transactions appear in a sortable table with running financial summaries at the bottom. The app calculates total income, total expenses, remaining budget, and net savings in real time after every change.
 
 <p align="center">
-  <img src="screenshots/11_transaction_list.png" width="700" alt="Transaction list with summaries"/>
+  <img src="screenshots/transaction_list.png" width="700" alt="Transaction list with summaries"/>
 </p>
 
 ### Expense visualization
 Clicking "Show Charts" generates a pie chart of expenses grouped by category. Income transactions are excluded from the chart. The chart updates as transactions are added or removed.
 
 <p align="center">
-  <img src="screenshots/12_pie_chart.png" width="500" alt="Expense pie chart by category"/>
-  <img src="screenshots/15_updated_pie_chart.png" width="500" alt="Updated pie chart after changes"/>
+  <img src="screenshots/pie_chart.png" width="450" alt="Expense pie chart by category"/>
+  <img src="screenshots/updated_pie_chart.png" width="450" alt="Updated pie chart after changes"/>
 </p>
 
 ### Budget alerts
 When remaining budget drops below $100, the app shows a warning dialog. This fires automatically whenever a transaction pushes the balance into the warning zone.
 
 <p align="center">
-  <img src="screenshots/13_budget_alert.png" width="700" alt="Budget alert warning"/>
+  <img src="screenshots/Budget_alert.png" width="700" alt="Budget alert warning"/>
 </p>
 
 ### Deleting transactions
 Select a row in the table and click "Delete Selected Transaction" to remove it. Financial summaries recalculate immediately.
 
 <p align="center">
-  <img src="screenshots/14_delete_transaction.png" width="700" alt="Selecting and deleting a transaction"/>
+  <img src="screenshots/delete_transaction.png" width="700" alt="Selecting and deleting a transaction"/>
 </p>
 
 ### Reset
 "Reset All Transactions" clears the table and resets all financial values. Budget amount is preserved.
 
 <p align="center">
-  <img src="screenshots/16_before_reset.png" width="600" alt="Before reset"/>
-  <img src="screenshots/17_after_reset.png" width="600" alt="After reset"/>
+  <img src="screenshots/before_reset.png" width="450" alt="Before reset"/>
+  <img src="screenshots/after_reset.png" width="450" alt="After reset"/>
 </p>
 
 ## How it works
@@ -119,11 +101,16 @@ expense-tracker/
 ├── requirements.txt
 ├── expense_tracker.py
 ├── screenshots/
-│   ├── 01_app_launch.png
-│   ├── 02_category_dropdown.png
-│   ├── 03_budget_set.png
-│   ├── ...
-│   └── 17_after_reset.png
+│   ├── app_launch.png
+│   ├── category_dropdown.png
+│   ├── budget_set.png
+│   ├── transaction_list.png
+│   ├── pie_chart.png
+│   ├── updated_pie_chart.png
+│   ├── Budget_alert.png
+│   ├── delete_transaction.png
+│   ├── before_reset.png
+│   └── after_reset.png
 ├── .gitignore
 └── LICENSE
 ```
