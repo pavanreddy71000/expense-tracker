@@ -129,8 +129,3 @@ expense-tracker/
 - Export reports to CSV or PDF
 - Add recurring transaction support
 - Write unit tests for the financial calculation logic
-
-## Author
-
-Sai Pavan Reddy Doddam Reddy
-- [LinkedIn](https://www.linkedin.com/in/sai-pavan09)
